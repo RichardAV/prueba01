@@ -1,0 +1,132 @@
+:root {
+    --primary-color:#EEC986;
+    --secondary-color:#CC9D73;
+    --terciary-color:#BE7471;
+    --primary-dark-color:#819161;
+    --secondary-dark-color:#62715F;
+    --terciary-dark-color:#3D4140;
+    font-size:21px;
+}
+*,*:before,*:after {
+    box-sizing: border-box; 
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: #fff;
+    font-family: 'Merriweather', serif;
+    letter-spacing:0.004em;
+    line-height: 1.58;
+    color:rgba(0, 0, 0, 0.84);
+}
+h1,h2,h3,h4,h5 {
+    margin-top:0.6rem;
+    margin-bottom:0.6rem;
+}
+h1 {
+    font-size:3em;
+    letter-spacing:0.5px;
+    font-weight:bold;
+}
+h2 {font-size: 1.6em}
+h3 {font-size: 1.3em}
+h4 {font-size: 1.1em}
+/* .global-container {  
+} */
+
+/* SPECIFICS STYLES */
+
+/* HEADER */
+.header {
+    margin-bottom:3rem;
+}
+.main-navigation {
+    background-color: var(--primary-color);
+    position:fixed;
+    top:0px;
+    width: 100%;
+}
+.main-menu {
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}
+.main-menu__items {
+    /* background-color: var(--secondary-color); */
+    padding:0.1rem 1rem;
+    margin:0 5px;
+    font-size:0.7rem;
+}
+
+/* TITLE AREA METADATOS */
+.title-area {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height:250px; */
+}
+.title-area__title-container {
+    margin-bottom:0.7em;
+}
+.title-container__title {
+    text-align:center;
+    
+}
+.title-area__meta {
+    /* background-color: red; */
+    
+}
+.title-area__metadatos {
+    display:flex;
+    list-style-type: none;
+}
+.metadatos__items {
+    font-size:0.7rem;
+    margin:0 1em;
+}
+.metadatos__items:not(:last-child):after {
+    content:"|";
+    position:relative;
+    left:0.7rem;
+    
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    /* background-color: var(--primary-color); */
+    padding-left:3rem;
+    padding-right:3rem;
+}
+
+.content-body {
+    /* background-color: var(--terciary-color); */
+    max-width:1200px;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+.content-body > h2,h3,h4,h5,h6,p {
+    max-width:670px;
+    margin-right:auto;
+    margin-left:auto;
+}
+.content-body > img {
+    display:block;
+    max-width:1000px;
+    width:100%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:2rem;
+    border-radius:5px;
+}
+.content-body > p ~ p {
+    margin-bottom:2rem;
+}
+/* FOOTER */
+.footer {
+    background-color: var(--primary-dark-color);
+    color:white;
+    height:5rem;
+    width:100%;
+    margin-top:2rem;
+}
